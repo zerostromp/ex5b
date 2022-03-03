@@ -29,7 +29,7 @@
 		  <br><button type="button" class="btn btn-primary">Convert</button>
 		</form>
 	</div>
-	<div id="result" style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
+	<div id= "result"  style="margin-top:10px;margin-left:10px; font-size: 20px; color:red;">
 	</div>
 	
 	<script>
@@ -74,7 +74,9 @@
 			   //------   
 			   var cs = conversion(temp,unit);
 			   //------
-			   alert("Temperature is "+t1+" in "+u1);
+			   document.getElementById('result').innerHTML=("Temperature is "+t1+" in "+u1);
+
+				//**ไม่เข้าใจว่าcodeตรงไหนผิดตอนแสดงผลหน้าเว็ปเลยไม่มีอะไรแสดง**//
 			});
 		});
 	</script>
